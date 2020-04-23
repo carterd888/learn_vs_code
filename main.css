@@ -3,6 +3,11 @@ body {
     margin: 0;
 }
 
+table, th, td {
+    border: 1px solid black;
+    color: black;
+}
+
 .title {
     font-size: 65px;
   }
@@ -23,6 +28,10 @@ p {
 #jasper {
     width: 200px;
     height: 100px;
+}
+
+#stylingErrorDisplay {
+    border: 1px black;
 }
 
 .run-js-button {
