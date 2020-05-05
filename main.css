@@ -3,19 +3,22 @@ body {
     margin: 0;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid black;
     color: black;
 }
 
 .title {
     font-size: 65px;
-  }
+}
 
 p {
     font-size: small;
-    font-family:Courier New;
+    font-family: Courier New;
 }
+
 .fantastic {
     background-color: #9C6CEB;
     color: beige;
@@ -47,7 +50,6 @@ p {
     height: 50px;
     margin: 0;
     padding: 5px;
-    font-family:Courier New;
+    font-family: Courier New;
     font-size: small;
-  
 }
