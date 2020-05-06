@@ -44,6 +44,11 @@ p {
     height: 300px;
 }
 
+#combine-universal {
+    width: 450px;
+    height: 300px;
+}
+
 .run-js-button {
     background-color: #FF8280;
     width: 200px;
