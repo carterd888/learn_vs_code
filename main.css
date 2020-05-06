@@ -3,6 +3,11 @@ body {
     margin: 0;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 table,
 th,
 td {
@@ -38,6 +43,7 @@ p {
     height: 300px;
     border: 1px solid black;
 }
+
 
 #borderDisplay {
     width: 450px;
