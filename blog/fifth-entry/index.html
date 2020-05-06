@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fifth Entry - Web Portfolio of Daniel</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+    <div class="fantastic">
+        <h1 class="title">Fifth Entry</h1>
+
+        <p>May 06, 2020</p>
+        <hr>
+        <h2>What did i learn today?</h2>
+        <p>Firstly after sharing this blog with my buddy group yesterday, i recieved feedback that the image was too big
+            and could do with being made smaller. </p>
+        <p>i initially decided to set a height and width for the image by defining an ID and setting pixel values using
+            CSS</p>
+        <p>this worked for the user who viewed using a web browser but it was still not displaying correctly on mobile
+        </p>
+        <p>i reasarched responsive sizing using CSS and found this example on <a
+                href="https://www.w3schools.com/howto/howto_css_image_responsive.asp" target="_blank">w3 schools</a></p>
+        <img id="responsive" src="responsive.jpg" alt="sample code using max-width: 100% and height: auto">
+        <p>i then applied this to all images by using the element selector img</p>
+        <hr>
+        <p>another thing i discovered today was a site used for HTML markup validation</p>
+        <a href="https://validator.w3.org/#validate_by_input" target="_blank">Link to site</a>
+        <p>using this i was able to test my pages i had already created and was suprised to learn errors</p>
+        <p>the first was that i had not defined a "lang" within the html tag. this was an oversight by me in that
+            everything on my page is in english, so i assumed the page would be read in english. however it is best
+            practise to define this.</p>
+        <p>another error which the validator picked up is that many of my .jpg files had names containing spaces. while
+            Visual Studio Code was able to read my sources references spaces due to the files being stored locally it is
+            invalid syntax for a URL to contain a space</p>
+        <p>as the files were on my local machine i had 2 options, either rename the files to not contain spaces, or to
+            encode the spaces using %20</p>
+        <p>i decided to do the former as Visual Studio Code offers shortcuts when referencing files and if i had to
+            manually over-ride the url to encode the spaces it would defeat the purpose.</p>
+        <hr>
+        <p>lastly, i started work today on creating a website template using "dummy" text</p>
+        <p>i focused on one of the steps “[website should include] An articles section with three articles, each
+            including a title, summary and a link.”</p>
+        <p>as i had previously used Emmet to create repetitive code with a single line of text, i set myself the
+            challenge to optimise this.</p>
+        <img id="attempt-1" src="attempt-1.jpg" alt="my first attempt at the code">
+        <img id="attempt-2" src="attempt-2.jpg" alt="my second attempt at the code">
+        <img id="attempt-3" src="attempt-3.jpg" alt="my third attempt at the code">
+        <img id="attempt-4" src="attempt-4.jpg" alt="my fourth attempt at the code">
+        <p>each time i was able to refine the string of code to include more detailed features</p>
+        <p>i saved the final code used in comments on my page so that i can refer to it again in the future</p>
+        <img id="final-attempt" src="final-attempt.jpg"
+            alt="my final code: ”section#articles>(article>h2{article $}+h3{about article $}+p>lorem20^a)*3”">
+    </div>
+    <script src="/main.js" async defer></script>
+</body>
+
+</html>
