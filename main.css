@@ -22,6 +22,25 @@ p {
     font-family: Courier New;
 }
 
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    padding: 5px;
+    margin: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #9C6CEB;
+}
+
+#blogs {
+    list-style-type: none;
+}
+
 /* Div Class Style */
 
 .title {
