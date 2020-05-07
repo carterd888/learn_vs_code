@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sixth Entry - Web Portfolio of Daniel</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+    <div class="fantastic">
+        <h1 class="title">Sixth Entry</h1>
+
+        <p>May 07, 2020</p>
+        <hr>
+        <h2>What did i learn today?</h2>
+        <p>firstly i learned an easy way to test the responsiveness of my website</p>
+        <p>by using the inspect tool on a live server of my page i could toggle devices or manually set the width and
+            height</p>
+        <figure>
+            <img id="responsive" src="responsive.jpg" alt="a drop-down box to select popular devices">
+            <figcaption>The picture shows a vareity of different devices that can be selected or a manual imput for
+                width and height</figcaption>
+        </figure>
+        <p>i noticed that below a certain width my Nav bar would start to overlap and become distorted</p>
+        <figure>
+            <img id="unresponsive" src="unresponsive.jpg" alt="the buttons for the nav bar overlap">
+            <figcaption>The picture shows a Nav bar on a smaller screen where the buttons start to overlap each other
+            </figcaption>
+        </figure>
+        <p>i raised this in a buddy meeting as an issue i was working on and was directed to <quote>media querys</quote>
+        </p>
+        <a href="https://mediag.com/blog/popular-screen-resolutions-designing-for-all/" target="_blank">I used this site
+            for reference on screen sizes</a>
+        <p>the code i created was this:</p>
+        <br>
+        @media (max-width: 479px) { <br>
+        nav ul li { <br>
+        display: block; } <br>
+        }</code>
+        <p>this would convert my display from inline to block so that the buttons stack on top of each other on a
+            smaller screen width</p>
+        <figure>
+            <img id="displayBlock" src="display-block.jpg" alt="displays nav buttons stacked on top of each">
+            <figcaption>The image shows a smaller screen width in which all the nav buttons are stacked on top of each
+                other in their own line instead of overlapping as before</figcaption>
+        </figure>
+    </div>
+    <script src="/main.js" async defer></script>
+</body>
+
+</html>
