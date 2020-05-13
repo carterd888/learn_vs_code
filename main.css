@@ -44,7 +44,6 @@ nav ul li a {
 }
 
 #blogs li a {
-    /* text-decoration: none; */
     color: beige;
 }
 
@@ -110,10 +109,11 @@ nav ul li a {
     font-size: small;
 }
 
-/* test css */
+/* blog navigation css */
 
 .next-previous a {
     text-decoration: none;
+    font-family: Courier New;
     display: inline-block;
     padding: 8px 16px;
     margin: 5px;

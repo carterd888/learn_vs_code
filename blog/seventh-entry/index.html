@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Seventh Entry - Web Portfolio of Daniel</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="fantastic">
+        <h1 class="title">Seventh Entry</h1>
+        <div class="next-previous">
+            <a href="/blog/sixth-entry/" class="previous round">&laquo; Previous</a>
+            <a href="/blog/first-entry/" class="next round">Next &raquo;</a>
+        </div>
+        <p>May 13, 2020</p>
+        <hr>
+        <h2>What did i learn today?</h2>
+        <p>today i wanted to improve the navigation between my blog pages</p>
+        <p>i first changed the links on the blog page to the dates of enteries instead of a numbered system first,
+            second etc.</p>
+        <p>this will help to identify each blog as the page expands</p>
+        <hr>
+        <p>my next idea was to include a way to move between the pages, based on which page you are on</p>
+        <p>i did some reasearch into this and it looked easier than i had anticipated using a similar method to my "nav
+            bar"</p>
+        <p>because this would be a big change effecting many pages i decided to make a branch from my origin named
+            "nav-scroll"</p>
+        <p>i used the terminal in visual studio code to do this as i had some previous experience</p>
+        <quote>" git checkout -b nav-scroll "</quote>
+        <p>i first reseached the buttons themselves, my initial idea would be to use directional arrows "<" and ">" </p>
+                <p>however i later decided this was not explicit enough in what they did so i added the text "Previous"
+                    and "Next"</p>
+                <p>i used this site to structure my CSS for the buttons</p>
+                <a href="https://www.w3schools.com/howto/howto_css_next_prev.asp"
+                    alt="a link to w3schools next/previous buttons">See site here</a>
+                <hr>
+                <p>my first issue was that i had previous CSS to style a tags and as i placed this CSS further down my
+                    page it was overriden</p>
+                <p>to combat this i added a div tag around the navigation links with a class of next-previous and
+                    refered to this as the parent selector of my CSS styling for a tag</p>
+                <figure>
+                    <img id="divNextPrevious" src="div-class-next-previous.jpg" alt="a div class surrounds the links">
+                    <figcaption>a div class is created as a parent of the anchor tags to separate them from any other
+                        CSS
+                        styling</figcaption>
+                </figure>
+                <figure>
+                    <img id="nextPrevious" src="next-previous.jpg" alt="css containing parent class before a tag">
+                    <figcaption>The CSS reads ".next-previous a" as opposed to just a </figcaption>
+                </figure>
+                <p>this allowed me to uniquely style these links and not affect any existing links</p>
+                <p>i edited the CSS to keep with the ongoing theme of my site with text and colours </p>
+                <hr>
+                <p>once i was happy with the changes i had to push the changes and create a pull request</p>
+                <p>i used the terminal again to initiate this with</p>
+                <quote>"git push --set-upstream origin nav-scroll"</quote>
+                <p>then i managed the merge on github and deleted the branch</p>
+                <p>when i returned to my console i navigated back to the origin brach and used a pull command</p>
+                <quote>"git checkout master" <br> "git pull"</quote>
+    </div>
+    <script src="/main.js" async defer></script>
+</body>
+
+</html>
