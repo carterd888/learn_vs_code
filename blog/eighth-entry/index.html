@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Eighth Entry - Web Portfolio of Daniel</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="fantastic">
+        <h1 class="title">Eighth Entry</h1>
+        <div class="next-previous">
+            <a href="/blog/seventh-entry/" class="previous round">&laquo; Previous</a>
+            <a href="/blog/first-entry/" class="next round">Next &raquo;</a>
+        </div>
+        <p>May 17, 2020</p>
+        <hr>
+        <h2>What did i learn today?</h2>
+        <p>after discussing flexbox yesterday in class, we were given the task to complete a game using flexbox
+            terminology</p>
+        <a href="https://flexboxfroggy.com/">This is the site for the game</a>
+        <p>i was able to complete most of the levels without much difficulty, however i was stuck on the final level</p>
+        <figure>
+            <img class="froggy" src="froggyStart.jpg" alt="level 24 start">
+            <figcaption>The image shows the starting position of frogs in a row at the top and their lillypads down each
+                side of the pond</figcaption>
+        </figure>
+        <p>i started by changing the flex-direction to a column in reverse order</p>
+        <figure>
+            <img class="froggy" src="froggy1.jpg" alt="level 24 incomplete">
+            <figcaption>The image shows the frogs in a column but not lined up with the lillypads
+                down each
+                side of the pond</figcaption>
+        </figure>
+        <p>i then added wrap-reverse so that first two yellow frogs appear on the first column</p>
+        <figure>
+            <img class="froggy" src="froggy2.jpg" alt="level 24 incomplete">
+            <figcaption>The image shows the frogs in two column but not lined up with the lillypads
+                down each
+                side of the pond</figcaption>
+        </figure>
+        <p>i then shortened this to flex-flow</p>
+        <figure>
+            <img class="froggy" src="froggy3.jpg" alt="level 24 incomplete">
+            <figcaption>The image shows the frogs in two column but not lined up with the lillypads
+                down each
+                side of the pond using only 1 line of code</figcaption>
+        </figure>
+        <p>next i aligned the content with space-between so that they were against the sides of the pond</p>
+        <figure>
+            <img class="froggy" src="froggyStuck.jpg" alt="level 24 incomplete">
+            <figcaption>The image shows 2 lines of code which nearly fulfill the requirements of the level however the
+                yellow frogs on the left are not aligned on their lillypads </figcaption>
+        </figure>
+        <p>to resolve this next step i thought i should select just the yellow frogs and manually adjust the order</p>
+        <p>this did not work as there was only the option to select the pond as a whole</p>
+        <p>eventually i came to the realisation that by centering the frogs they would line up differently on each side
+            of the pond due to the number of frogs.</p>
+        <figure>
+            <img class="froggy" src="froggySolved.jpg" alt="level 24 complete">
+            <figcaption>The image shows all the frogs correctly lined up on their lillypads "level complete"
+            </figcaption>
+        </figure>
+        <p>the final code i used was:</p>
+        <code>" flex-flow: column-reverse wrap-reverse;<br>
+            align-content: space-between;<br>   
+            justify-content: center; "</code>
+    </div>
+    <script src="/main.js" async defer></script>
+</body>
+
+</html>

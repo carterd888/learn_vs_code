@@ -97,6 +97,11 @@ nav ul li a {
     border: 1px solid black;
 }
 
+.froggy {
+    width: 450px;
+    height: 300px;
+}
+
 /* JS Style */
 
 .run-js-button {
