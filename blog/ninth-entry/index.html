@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ninth Entry - Web Portfolio of Daniel</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="fantastic">
+        <h1 class="title">Ninth Entry</h1>
+        <div class="next-previous">
+            <a href="/blog/eighth-entry/" class="previous round">&laquo; Previous</a>
+            <a href="/blog/first-entry/" class="next round">Next &raquo;</a>
+        </div>
+        <p>May 18, 2020</p>
+        <hr>
+        <h2>What did i learn today?</h2>
+        <p>Another part of the homework for this week is to recreate a website using HTML and CSS</p>
+        <a href="http://thinkful-ed.github.io/karma-clone/" alt="a sample website">This is the site</a>
+        <p>i decided to break it down into sections and tackle the nav bar first</p>
+        <p>i used emmet to start the framework of the HTML</p>
+        <quote>"header>nav>ul>(li>a)*6"</quote>
+        <p>i added the text for the sections and a blank link "#"</p>
+        <p>using CSS i was able to style the nav bar to match the sample website however i struggled to get the logo to
+            appear where i needed it to</p>
+        <p>i initially tried to make a container and use display:flex however the image seemed to resize to the entire
+            container</p>
+        <p>the way i managed to resolve this issue was to float the image to the left with a max-width and max-height
+            and use a margin to indent it</p>
+        <code>#karma-logo {<br>
+            margin-left: 50px;<br>
+            float: left;<br>
+            height: auto;<br>
+            width: auto;<br>
+            max-height: 50px;<br>
+            max-width: 50px;<br>
+        }</code>
+        <p>and then i used display:inline for the list to position it to the right of the logo</p>
+        <code>
+            nav ul li {<br>
+                display: inline;<br>
+                padding: 5px;<br>
+                margin: 5px;<br>
+            }
+        </code>
+        <figure>
+            <img src="nav-bar-sample.jpg" alt="the nav bar recreated">
+            <figcaption>The nav bar shows a logo indented on the left with the nav buttons in a row on the right
+            </figcaption>
+        </figure>
+
+    </div>
+    <script src="/main.js" async defer></script>
+</body>
+
+</html>
