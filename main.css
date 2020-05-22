@@ -18,7 +18,25 @@ td {
 }
 
 p {
-    font-size: small;
+    font-size: x-large;
+    font-family: Courier New;
+    width: 90%;
+}
+
+figcaption {
+    color: black;
+    font-size: medium;
+    font-family: Courier New;
+}
+
+quote {
+    color: black;
+    font-size: medium;
+    font-family: Courier New;
+}
+
+a {
+    font-size: x-large;
     font-family: Courier New;
 }
 

@@ -31,10 +31,14 @@
         <p>today i tried to move a website from CodePen to GitHub</p>
         <p>the instructions seemed simple enough until "put the contents of a zip folder in a git GitHub repository</p>
         <p>after some trial and error and googling i came across this helpful link</p>
-        <a href="https://superuser.com/questions/1412078/bring-a-local-folder-to-remote-git-repo" target="_blank">This
+        <a href="https://superuser.com/questions/1412078/bring-a-local-folder-to-remote-git-repo" target="_blank"
+            alt="a question about bringing a local folder to git repo">This
             is a the site i found</a>
         <p>i managed to get very far following this until step 9 where i encounted an error</p>
-        <img id="rejectedError" src="./rejected-error.jpg" alt="error saying the push failed">
+        <figure>
+            <img id="rejectedError" src="./rejected-error.jpg" alt="error saying the push failed">
+            <figcaption>the figure shows an error message that the push has failed</figcaption>
+        </figure>
         <p>the help file referenced was extremely hard to follow so i went back to the existing webpage i found the
             steps on and looked at the comments to see if others had my problem</p>
         <a href="https://stackoverflow.com/questions/5509543/how-do-i-properly-force-a-git-push" target="_blank">This is
@@ -42,7 +46,10 @@
         <p>i figured out the reason i was having all these errors was when i set up the repository i initialised it with
             a README file</p>
         <p>by doing this i had prevented any transfer of files as my local folder was seen as "out of date"</p>
-        <img id="force" src="./force.jpg" alt="used command to force the push">
+        <figure>
+            <img id="force" src="./force.jpg" alt="used command to force the push">
+            <figcaption>The figure shows by adding the force command the push worked</figcaption>
+        </figure>
         <p>as the file in the existing GitHub repository was of no value i forced through the push of my files to GitHub
         </p>
         <br>
