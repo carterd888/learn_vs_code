@@ -1,20 +1,12 @@
 /* General Style */
 
 body {
-    background: white;
-    margin: 0;
+    margin: 0px;
 }
 
 img {
     max-width: 100%;
     height: auto;
-}
-
-table,
-th,
-td {
-    border: 1px solid black;
-    color: black;
 }
 
 p {
@@ -42,20 +34,41 @@ a {
 
 /* Nav style */
 
+nav {
+    font-size: x-large;
+    background-color: beige;
+
+}
+
 nav ul {
     list-style-type: none;
+    display: flex;
+    padding-inline-start: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
 }
 
 nav ul li {
-    display: inline;
-    padding: 5px;
-    margin: 5px;
+    flex-direction: row;
+    flex: auto;
+    text-align: center;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #9C6CEB;
+    color: inherit;
 }
+
+nav ul li:hover,
+nav ul li:active {
+    background-color: #FF8280;
+}
+
+.active {
+    background-color: #FF8280;
+}
+
+/* Blog Style */
 
 #blogs {
     list-style-type: none;
