@@ -79,8 +79,9 @@ nav ul li:active {
 }
 
 #blogs li a:hover {
-    font-size: large;
+    font-size: xx-large;
     font-weight: bold;
+    color: black;
     background-color: cornflowerblue;
 }
 
