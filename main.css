@@ -35,6 +35,8 @@ a {
 /* Nav style */
 
 nav {
+    position: fixed;
+    width: 100%;
     font-size: x-large;
     background-color: beige;
 
