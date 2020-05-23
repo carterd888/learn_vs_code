@@ -87,25 +87,6 @@ nav ul li:active {
     background-color: cornflowerblue;
 }
 
-/* Projects Style */
-
-/* .container {
-    display: inline-flex;
-    flex-direction: column;
-} */
-
-/* article.week1 {
-    flex-flow: column wrap;
-    align-content: center;
-    border: solid black 2px;
-}
-
-article.week2 {
-    flex-direction: column;
-    border: solid red 2px;
-} */
-
-
 /* Div Class Style */
 
 .title {
