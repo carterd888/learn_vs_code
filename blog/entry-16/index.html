@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Entry 16 - Web Portfolio of Daniel</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li class="active"><a href="/blog">Blog</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <button onclick="topFunction()" id="scrollBtn" title="Go to top">Top</button>
+
+    <div class="fantastic">
+        <h1 class="title">Entry 16</h1>
+        <div class="next-previous">
+            <a href="/blog/entry-15/" class="previous round">&laquo; Previous</a>
+            <a href="/blog/entry-1/" class="next round">Next &raquo;</a>
+        </div>
+        <p>May 25, 2020</p>
+        <hr>
+        <h2>What did i learn today?</h2>
+        <p>today i wanted to add a button on my blog pages that would move you to the top of the page.</p>
+        <p>i noticed that some of my enteries were getting quite long and it would be nice to jump back to the start
+            after reading</p>
+        <p>i researched ways of doing this and decided to use javascript on a button which appears as you scroll down
+            the page as per <a href="https://www.w3schools.com/howto/howto_js_scroll_to_top.asp" target="_blank"
+                alt="w3schools js scroll to top">this site</a></p>
+        <p>i added the javascript to my existing main.js page changing the name of the button to be more descriptive</p>
+        <figure>
+            <img id="scrollJs" src="scroll-js.jpg" alt="the javascript for the top button">
+            <figcaption>The image shows a function which is called when the window scrolls. It changes the css to
+                display the button as a block when the page has scrolled 20px from the top. If clicked it resets the
+                scroll to 0</figcaption>
+        </figure>
+        <p>i then adapted the CSS from the tutorial to better reflect the style of my page</p>
+        <figure>
+            <img id="scrollCSS" src="scroll-css.jpg" alt="a button with the text top">
+            <figcaption>The image shows a button styled to not display, be fixed on screen has a z-index of 99 and
+                changes the cursor to pointer. if you hover over it the colour changes</figcaption>
+        </figure>
+        <p>i made sure to make the contrast of the text on the button accessible as per my previous entry</p>
+        <p>then i added the HTML to each page</p>
+        <figure>
+            <img id="scrollHtml" src="scroll-html.jpg" alt="a button that uses the javascript topFunction">
+            <figcaption>the image shows a button with the text Top that when clicked calls the function "topFunction"
+            </figcaption>
+        </figure>
+        <p>the finished button appears like this</p>
+        <figure>
+            <img id="top" src="top.jpg" alt="top button">
+            <figcaption>The figure shows the top button and what changes when clicked</figcaption>
+        </figure>
+
+    </div>
+    <script src="/main.js" async defer></script>
+</body>
+
+</html>
