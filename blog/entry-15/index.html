@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Entry 15 - Web Portfolio of Daniel</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li class="active"><a href="/blog">Blog</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <button onclick="topFunction()" id="scrollBtn" title="Go to top">Top</button>
+
+    <div class="fantastic">
+        <h1 class="title">Entry 15</h1>
+        <div class="next-previous">
+            <a href="/blog/entry-14/" class="previous round">&laquo; Previous</a>
+            <a href="/blog/entry-1/" class="next round">Next &raquo;</a>
+        </div>
+        <p>May 24, 2020</p>
+        <hr>
+        <h2>What did i learn today?</h2>
+        <p>today i noticed a spelling mistake on my page title</p>
+        <figure>
+            <img id="spellingMistake" src="spelling-mistake.jpg" alt="page is called twelth not twelfth">
+            <figcaption>the URL displays blog/twelth-entry which should be blog/twelfth-entry</figcaption>
+        </figure>
+        <p>while i was changing this i noticed that using this current indexing system not only are the names hard to
+            read/spell they are also unordered within the blog directory</p>
+        <figure>
+            <img id="oldBlogListings" src="old-blog-listings.jpg" alt="the pages are showed in alphabetical order">
+            <figcaption>the image shows the pages within the blog directory which are ordered alphabetically which does
+                not correspond with the order they were created for example eleventh is before third</figcaption>
+        </figure>
+        <p>i proceeded to rename the pages using a numerical system starting with entry-1</p>
+        <p>this was quite time consuming as i had to rename each folder, rename the title in the head tag and h1 tag.
+            then rename both the previous and next links to reflect this name change</p>
+        <p>the end result was a numerically ordered list which is much easier to read and impliment going forward</p>
+        <figure>
+            <img id="blogIndex" src="blog-index.jpg" alt="an ordered list">
+            <figcaption>The image shows directories within blog starting at entry 1 and continuing in numerical order
+            </figcaption>
+        </figure>
+    </div>
+    <script src="/main.js" async defer></script>
+</body>
+
+</html>
