@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Entry 14 - Web Portfolio of Daniel</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li class="active"><a href="/blog">Blog</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <button onclick="topFunction()" id="scrollBtn" title="Go to top">Top</button>
+
+    <div class="fantastic">
+        <h1 class="title">Entry 14</h1>
+        <div class="next-previous">
+            <a href="/blog/entry-14/" class="previous round">&laquo; Previous</a>
+            <a href="/blog/entry-1/" class="next round">Next &raquo;</a>
+        </div>
+        <p>May 23, 2020</p>
+        <hr>
+        <h2>What did i learn today?</h2>
+        <p>today i wanted to improve my nav bar using a flexbox</p>
+        <p>to do this i created a branch from my master so could save and change things freely</p>
+        <p>i then made the unordered list display:flex this is the parent container for the list items so i can arrange
+            them using flexbox commands</p>
+        <p>i used a flex-direction of row and flex:auto to spread them evenly, with text-align set to center</p>
+        <p>however i still had the issue of white space above, below and to the left of my list items</p>
+        <figure>
+            <img id="navBarWhiteSpace" src="nav-bar-white-space.jpg"
+                alt="shows space above and below and a slight indent left">
+            <figcaption>The image shows the nav bar spaced evenly across the width of the screen however there is white
+                space above and below and an indent to the left</figcaption>
+        </figure>
+        <p>to investigate why this happening i used the inspect tool</p>
+        <figure>
+            <img id="inspectCss" src="inspect-css.jpg" alt="using the inspect tool to see the css">
+            <figcaption>The image shows css for a margin-block start and end 1em and padding-inline-start 40px
+            </figcaption>
+        </figure>
+        <p>i then reversed this in my main.css stylesheet</p>
+        <figure>
+            <img id="cssChanges" src="css-changes.jpg" alt="removed the margin and padding">
+            <figcaption>the figure shows my CSS that reverses the CSS adding 0 margin-block end and start and 0
+                padding-inline-start</figcaption>
+        </figure>
+        <p>lastly i added an "active" class to identify which page was open and a hover for the nav bar</p>
+        <figure>
+            <img id="activeCss" src="active-CSS.jpg" alt="background colour change on active">
+            <img id="activeHtml" src="active-HTML.jpg" alt="active class added to page">
+            <figcaption>The images show the css and html code for adding an active class to the page</figcaption>
+        </figure>
+        <p>the changes were then reflected on my nav bar showing no whitespace or indent and a background colour added
+            to the active page</p>
+        <figure>
+            <img id="navBarFinal" src="nav-bar-final.jpg" alt="no extra padding or margins around nav bar">
+            <figcaption>The image shows the nav bar which takes up the entire width of screen and has no white space
+                above or below it and a coloured background on active page</figcaption>
+        </figure>
+    </div>
+    <script src="/main.js" async defer></script>
+</body>
+
+</html>
